@@ -4,3 +4,11 @@
     @Author : 李子
     @Url : https://github.com/kslz
 """
+from flask import Blueprint
+
+blog_bp = Blueprint('blog', __name__)
+
+
+@blog_bp.route('/')
+def index():
+    pass
